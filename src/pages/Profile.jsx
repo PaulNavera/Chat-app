@@ -88,7 +88,7 @@ const Profile = ({ user }) => {
               <p className="text-sm text-gray-700">Active</p>
             </div>
             <div className=" w-full flex flex-col gap-2 mt-4">
-              <h4 className="text-lg text-blue-500">About</h4>
+              <h4 className="text-md text-bold text-blue-500">About</h4>
               <div>
                 <label className="text-sm text-gray-700">Name:</label>
                 <p className="text-sm text-gray-500">{user.displayName}</p>
@@ -105,13 +105,13 @@ const Profile = ({ user }) => {
           </div>
           <div className="w-full">
             <div className="mt-2">
-              <h4 className="text-lg text-blue-500">Media Files</h4>
+              <h4 className="text-md text-bold  text-blue-500">Media Files</h4>
 
               <div className="w-48 flex gap-1 overflow-y-auto">{images}</div>
             </div>
 
             <div className="">
-              <h4 className="text-lg text-blue-500">Attached Files</h4>
+              <h4 className="text-md text-bold text-blue-500">Attached Files</h4>
               <div className="h-36 flex flex-col gap-2 overflow-x-auto">
                 {attached}
               </div>

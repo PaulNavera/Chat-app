@@ -37,7 +37,7 @@ export default function App() {
 
  
 
-  const socket = io.connect('http://localhost:3001');
+  const socket = io.connect('https://34.118.151.239/');
 
 
 useEffect(()=>{
