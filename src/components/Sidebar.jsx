@@ -28,10 +28,10 @@ const signOutAccount = () =>{
     <div className="hidden md:flex h-screen w-20 bg-black">
       <div className="flex flex-col justify-between w-full h-full items-center py-2 ">
         <div className=" flex flex-col gap-10 w-full h-full items-center ">
-          <Link to="/chat" className=" text-3xl  hover:cursor-pointer ">
+          <Link to="/chats" className=" text-3xl  hover:cursor-pointer ">
            
           <span className="text-md text-blue-500"><SiChatbot/></span>
-              
+            
           </Link >
           <Link to="/profile" className=" text-2xl text-white hover:cursor-pointer hover:text-blue-500 active:text-blue-500 active:border-r-2 border-blue-500 px-5 ">
             <FaUserCircle />
@@ -43,7 +43,7 @@ const signOutAccount = () =>{
             <RiContactsFill />
           </Link >
 
-          <Link to="/setting" className=" text-2xl text-white hover:cursor-pointer hover:text-blue-500 active:text-blue-500 active:border-r-2 border-blue-500 px-5">
+          <Link to="/settings" className=" text-2xl text-white hover:cursor-pointer hover:text-blue-500 active:text-blue-500 active:border-r-2 border-blue-500 px-5">
             <AiOutlineSetting />
           </Link >
         </div>

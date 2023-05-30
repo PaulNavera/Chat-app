@@ -6,7 +6,7 @@ import { ChatContext } from "../store/ChatContext";
 import {findChat} from '../api/ChatRequests'
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../Firebase";
-
+import {SiChatbot} from 'react-icons/si'
 
 const Chatbox = ({setSendMessage, receivedMessage}) => {
   const [user] = useAuthState(auth)
@@ -53,8 +53,9 @@ const Chatbox = ({setSendMessage, receivedMessage}) => {
         <SendMessage messagesData={messagesData} setMessagesData={setMessagesData} setSendMessage={setSendMessage} receiverId={onChatUser.userId}  chatId={chatId} user={user}/>
       </div>
       :
-      <div className="w-full h-screen flex items-center justify-center bg-gray-300">
-        <h1>Welcome to Chatify App!</h1>
+      <div className="w-full h-screen flex flex-col gap-2 items-center justify-center bg-gray-300">
+        <span className="text-4xl md:text-6xl text-blue-500"><SiChatbot/></span>
+        <h1 className="text-md md:text-xl text-gray-800">Welcome to Chatify App!</h1>
       </div>
       }
       </>

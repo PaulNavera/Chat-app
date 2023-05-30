@@ -123,7 +123,7 @@ useEffect(() => {
           
           <Route path='/chats' element={<ProtectedRoute user={user}><Chats /></ProtectedRoute>} />
           <Route path='/contacts' element={<ProtectedRoute user={user}><Contacts /></ProtectedRoute>} />
-          <Route path='/profile' element={<ProtectedRoute user={user}><Profile /></ProtectedRoute>} />
+          <Route path='/profile' element={<ProtectedRoute user={user}><Profile user={user} /></ProtectedRoute>} />
           <Route path='/settings' element={<ProtectedRoute user={user}><Settings /></ProtectedRoute>} />
         </Routes>
       </Router>

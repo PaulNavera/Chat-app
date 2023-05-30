@@ -12,9 +12,11 @@ const Settings = () => {
 
   return (
     
-      <div className=" md:flex flex-col gap-8 hidden items-center h-screen w-[300px] bg-[#ffff] p-2  shadow-lg">
-       
-       Settings
+      <div className=" md:flex flex-col gap-8 hidden items-center h-screen w-[300px] bg-[#ffff] p-4  shadow-lg">
+       <h1 className="text-gray-500 text-bold  text-xl self-start">Settings</h1>
+       <div className="flex w-full h-full justify-center items-center">
+        <p className="text-lg text-red-500">Unavailable!</p>
+       </div>
       </div>
     
   );
