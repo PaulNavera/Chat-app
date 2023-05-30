@@ -1,5 +1,5 @@
 
-const baseURL = 'http://localhost:4000/api/message'
+const baseURL = 'https://chat-app-server-fed8.onrender.com/api/message'
 
 export const sendMessageRequest = (chatId,senderId, message ) => 
 

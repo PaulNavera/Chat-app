@@ -1,6 +1,6 @@
 
 
-    const baseURL = 'http://localhost:4000/api/chat'
+    const baseURL = 'https://chat-app-server-fed8.onrender.com/api/chat'
 
     export const createChatRequest = (senderId, receiverId ) => fetch(`${baseURL}/`,{
         method: 'POST',

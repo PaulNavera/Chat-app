@@ -1,6 +1,6 @@
 
 
-const baseURL = 'http://localhost:4000/api/user'
+const baseURL = 'https://chat-app-server-fed8.onrender.com/api/user'
 
 export const saveUserRequest = (userId, displayName, email, photoURL) => fetch(`${baseURL}/save`,{
     method: 'POST',
